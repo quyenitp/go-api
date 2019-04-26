@@ -6,7 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"../models"
+	"github.com/quyenitp/go-api/models"
+
 	"github.com/gorilla/mux"
 )
 

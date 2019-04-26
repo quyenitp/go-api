@@ -6,9 +6,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"../models"
-
 	"github.com/gorilla/mux"
+	"github.com/quyenitp/go-api/models"
 )
 
 //Users will store sample value from main func
