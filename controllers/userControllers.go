@@ -2,7 +2,6 @@ package controllers
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"net/http"
 	"strconv"
@@ -12,9 +11,8 @@ import (
 	"github.com/gorilla/mux"
 )
 
+//Users will store sample value from main func
 var Users []models.User
-
-//var AccountsInUser = []models.Account{}
 
 //GetUserByID is func get user info by id
 func GetUserByID(w http.ResponseWriter, r *http.Request) {
@@ -33,9 +31,9 @@ func GetUserByID(w http.ResponseWriter, r *http.Request) {
 
 }
 
+//GetAccountByUserID is func get All account info by UserID
 func GetAccountByUserID(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
-
 	accs := []models.Account{}
 	for _, item := range Accounts {
 		userID, err := strconv.Atoi(params["id"])
@@ -44,7 +42,6 @@ func GetAccountByUserID(w http.ResponseWriter, r *http.Request) {
 		}
 		if item.UserID == userID {
 			accs = append(accs, item)
-			fmt.Println(item.ID)
 		}
 	}
 	json.NewEncoder(w).Encode(accs)

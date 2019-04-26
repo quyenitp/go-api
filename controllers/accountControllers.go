@@ -10,9 +10,10 @@ import (
 	"github.com/gorilla/mux"
 )
 
+//Accounts will store sample data for Accounts
 var Accounts []models.Account
 
-//GetUserByID is func get user info by id
+//GetAccountByID is func get Account info by id
 func GetAccountByID(w http.ResponseWriter, r *http.Request) {
 	params := mux.Vars(r)
 
