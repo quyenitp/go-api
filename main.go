@@ -28,11 +28,11 @@ func main() {
 
 	controllers.Accounts = Accounts
 
-	fmt.Println("Running RESTfull API ... on port 8000")
+	fmt.Println("Running RESTfull API ... on port 8080")
 	router := mux.NewRouter()
 
 	router.HandleFunc("/users/{id}", controllers.GetUserByID).Methods("GET")
 	router.HandleFunc("/users/{id}/accounts", controllers.GetAccountByUserID).Methods("GET")
 	router.HandleFunc("/accounts/{id}", controllers.GetAccountByID).Methods("GET")
-	log.Fatalln(http.ListenAndServe(":8000", router))
+	log.Fatalln(http.ListenAndServe(":8080", router))
 }
