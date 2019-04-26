@@ -9,5 +9,7 @@ Go RESTful API
 
 # API 
 `http://localhost:8000/users/1`
+
 `http://localhost:8000/users/1/accounts`
+
 `http://localhost:8000/accounts/1`
