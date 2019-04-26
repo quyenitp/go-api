@@ -5,10 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	"./controllers"
-	"./models"
-
 	"github.com/gorilla/mux"
+	"github.com/quyenitp/go-api/controllers"
+	"github.com/quyenitp/go-api/models"
 )
 
 func main() {
