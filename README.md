@@ -8,10 +8,10 @@ Simple Go RESTful API
 `go run main.go` 
 
 # Dockerize 
-docker build -t go-api .
+`docker build -t go-api .`
 
 # Docker run command 
-docker run -d -p 8080:8080 go-api 
+`docker run -d -p 8080:8080 go-api `
 
 # API 
 `http://localhost:8000/users/1`
