@@ -14,9 +14,9 @@ func main() {
 
 	var Users []models.User
 
-	Users = append(Users, models.User{ID: 1, Name: "Jame", AccountIDs: "1,3,5"})
-	Users = append(Users, models.User{ID: 2, Name: "Bond", AccountIDs: "4"})
-	Users = append(Users, models.User{ID: 3, Name: "Jimmy", AccountIDs: "2"})
+	Users = append(Users, models.User{ID: 1, Name: "Jame", AccountIDs: []int {1,3,5}})
+	Users = append(Users, models.User{ID: 2, Name: "Bond", AccountIDs: []int{4}})
+	Users = append(Users, models.User{ID: 3, Name: "Jimmy", AccountIDs: []int{2}})
 
 	var Accounts []models.Account
 	Accounts = append(Accounts, models.Account{ID: 1, UserID: 1, Name: "Tiet Kiem", Balance: 50000})

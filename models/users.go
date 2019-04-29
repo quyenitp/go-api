@@ -4,5 +4,5 @@ package models
 type User struct {
 	ID         int
 	Name       string
-	AccountIDs string
+	AccountIDs []int
 }
