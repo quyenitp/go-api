@@ -6,8 +6,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/quyenitp/go-api/controllers"
-	"github.com/quyenitp/go-api/models"
+	"go-api/controllers"
+	"go-api/models"
 )
 
 func main() {

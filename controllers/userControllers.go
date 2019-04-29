@@ -7,7 +7,7 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/quyenitp/go-api/models"
+	"go-api/models"
 )
 
 //Users will store sample value from main func
