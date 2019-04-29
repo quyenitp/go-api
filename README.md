@@ -14,8 +14,8 @@ Simple Go RESTful API
 `docker run -d -p 8080:8080 go-api `
 
 # API 
-`http://localhost:8000/users/1`
+`http://localhost:8080/users/1`
 
-`http://localhost:8000/users/1/accounts`
+`http://localhost:8080/users/1/accounts`
 
-`http://localhost:8000/accounts/1`
+`http://localhost:8080/accounts/1`
